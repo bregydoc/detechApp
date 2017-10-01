@@ -1,8 +1,7 @@
 import "package:flutter/material.dart";
-import "dart:async";
 import 'package:firebase_database/firebase_database.dart';
 
-import 'patient.dart';
+import 'patientDashboard.dart';
 
 
 class DashboardPage extends StatefulWidget {

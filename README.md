@@ -1,7 +1,7 @@
 <p align="center">
-![Logo of Detech app](logo.png)
-# Detech App
+<img src="logo.png">
 </p>
+# Detech App
 **Detech app**
 
 ## Getting Started

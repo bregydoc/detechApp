@@ -1,8 +1,9 @@
 <p align="center">
 <img src="logo.png">
+<h1>DETECH APP</h1>
 </p>
-# Detech App
-**Detech app**
+
+
 
 ## Getting Started
 

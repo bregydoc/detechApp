@@ -1,6 +1,8 @@
-# detechapp
-
-Detech app
+<p align="center">
+![Logo of Detech app](logo.png)
+# Detech App
+</p>
+**Detech app**
 
 ## Getting Started
 

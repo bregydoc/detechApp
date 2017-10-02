@@ -86,13 +86,6 @@
             </list>
           </value>
         </entry>
-        <entry key="firebase_auth">
-          <value>
-            <list>
-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.2.0/lib" />
-            </list>
-          </value>
-        </entry>
         <entry key="firebase_database">
           <value>
             <list>
@@ -110,14 +103,14 @@
         <entry key="flutter">
           <value>
             <list>
-              <option value="$USER_HOME$/Documents/prueba_flutter/flutter/packages/flutter/lib" />
+              <option value="$USER_HOME$/flutter/packages/flutter/lib" />
             </list>
           </value>
         </entry>
         <entry key="flutter_test">
           <value>
             <list>
-              <option value="$USER_HOME$/Documents/prueba_flutter/flutter/packages/flutter_test/lib" />
+              <option value="$USER_HOME$/flutter/packages/flutter_test/lib" />
             </list>
           </value>
         </entry>
@@ -320,7 +313,7 @@
         <entry key="sky_engine">
           <value>
             <list>
-              <option value="$USER_HOME$/Documents/prueba_flutter/flutter/bin/cache/pkg/sky_engine/lib" />
+              <option value="$USER_HOME$/flutter/bin/cache/pkg/sky_engine/lib" />
             </list>
           </value>
         </entry>
@@ -437,7 +430,6 @@
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/crypto-2.0.2+1/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/csslib-0.14.1/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/firebase_analytics-0.0.4/lib" />
-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.2.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/firebase_database-0.0.12/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/firebase_storage-0.0.5/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/front_end-0.1.0-alpha.4.1/lib" />
@@ -482,9 +474,9 @@
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/watcher-0.9.7+4/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/web_socket_channel-1.0.6/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/yaml-2.1.13/lib" />
-      <root url="file://$USER_HOME$/Documents/prueba_flutter/flutter/bin/cache/pkg/sky_engine/lib" />
-      <root url="file://$USER_HOME$/Documents/prueba_flutter/flutter/packages/flutter/lib" />
-      <root url="file://$USER_HOME$/Documents/prueba_flutter/flutter/packages/flutter_test/lib" />
+      <root url="file://$USER_HOME$/flutter/bin/cache/pkg/sky_engine/lib" />
+      <root url="file://$USER_HOME$/flutter/packages/flutter/lib" />
+      <root url="file://$USER_HOME$/flutter/packages/flutter_test/lib" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

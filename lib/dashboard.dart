@@ -3,24 +3,38 @@ import 'package:firebase_database/firebase_database.dart';
 
 import 'patientDashboard.dart';
 
+import 'main.dart';
+
 
 class DashboardPage extends StatefulWidget {
 
+    String _id;
+    DashboardPage(String id) {
+        this._id = id;
+    }
+
     @override
-    _DashboardPageState createState() => new _DashboardPageState();
+    _DashboardPageState createState() => new _DashboardPageState(_id);
 
 
 }
 
 class _DashboardPageState extends State<DashboardPage> {
-    final reference = FirebaseDatabase.instance.reference().child('Patients');
 
-    List<ListTile> _users = new List();
+    String _id;
+    DatabaseReference reference;
+    _DashboardPageState(String id) {
+        this._id = id;
+        reference = FirebaseDatabase.instance.reference().child('Users/$_id/patients');
+    }
+
+
+    List<ListTile> _patients = new List();
     int _size = 0;
     String _dniOfSelectedPatient = "";
 
     Widget getNewPatient(BuildContext context, int index) {
-        return  _users[index];
+        return  _patients[index];
     }
 
     void _clickPatient (){
@@ -33,11 +47,11 @@ class _DashboardPageState extends State<DashboardPage> {
     @override
     Widget build(BuildContext context) {
         reference.onValue.listen((event) {
-            _users.removeRange(0, _users.length);
+            _patients.removeRange(0, _patients.length);
 
             var patients = new Map.from(event.snapshot.value);
             patients.forEach((k, v) {
-                _users.add(new ListTile(
+                _patients.add(new ListTile(
                     leading: new Icon(Icons.person),
                     title: new Text(v["nombre_completo"]),
                     subtitle: new Text(v["dni"]),
@@ -47,7 +61,7 @@ class _DashboardPageState extends State<DashboardPage> {
                     },
                 ));
             });
-            setState(() {_size = _users.length;});
+            setState(() {_size = _patients.length;});
         });
 
         void _pressAddButton() {
@@ -55,15 +69,7 @@ class _DashboardPageState extends State<DashboardPage> {
         }
 
         return new Scaffold(
-            drawer: new Drawer(
-                child: new ListView(
-                    children: <Widget>[
-                        new UserAccountsDrawerHeader(
-                            accountName: new Text("Bregy Malpartida"),
-                            accountEmail: new Text("bregy.malpartida@utec.edu.pe")),
-                    ],
-                ),
-            ),
+            drawer: generalDrawer,
             floatingActionButton: new FloatingActionButton(
                 child: new Icon(Icons.add), onPressed: _pressAddButton),
             backgroundColor: new Color(0xffEEEEEE),

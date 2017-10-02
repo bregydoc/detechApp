@@ -3,7 +3,7 @@ import 'package:firebase_database/firebase_database.dart';
 import 'patientInfo.dart';
 import 'patientCH.dart';
 import 'patientThermal.dart';
-
+import 'main.dart';
 
 
 class PatientView extends StatefulWidget {
@@ -26,7 +26,7 @@ class _PatientViewState extends State<PatientView> with SingleTickerProviderStat
         reference = FirebaseDatabase.instance.reference().child('Patients/$_dni');
     }
 
-    Map _dataOfUser = new Map();
+    Map _dataOfPatient = new Map();
 
     TabController tabController;
 
@@ -48,7 +48,7 @@ class _PatientViewState extends State<PatientView> with SingleTickerProviderStat
         reference.onValue.listen((event) {
             setState(() {
                 var data = event.snapshot.value;
-                _dataOfUser = data;
+                _dataOfPatient = data;
             });
         });
 
@@ -66,13 +66,15 @@ class _PatientViewState extends State<PatientView> with SingleTickerProviderStat
                 ),
             ),
             body:  new TabBarView(
+
                 controller: tabController,
                 children: [
-                    new PatientInfo(_dataOfUser),
-                    new PatientClinicHistory(),
+                    new PatientInfo(_dataOfPatient),
+                    new PatientClinicHistory(_dataOfPatient["evaluation_file"]),
                     new PatientThermalHistory(),
                 ]
             ),
+            drawer: generalDrawer,
 
         );
     }

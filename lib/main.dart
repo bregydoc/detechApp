@@ -25,6 +25,12 @@ class LoginPageState extends State<LoginPage> {
     List<String> validUsernames = new List();
     Map usersData = new Map();
 
+    double _imageScale = 1.0;
+
+    final TextEditingController passController = new TextEditingController();
+    final TextEditingController usernameController = new TextEditingController();
+
+    ScrollController scrollController = new ScrollController();
 
     @override
     void initState() {
@@ -38,10 +44,17 @@ class LoginPageState extends State<LoginPage> {
         });
     }
 
+    void userEnteringData(String data ){
+        scrollController.animateTo(10.0, duration: new Duration(seconds: 1), curve: null);
+    }
+
+
+
     @override
     Widget build(BuildContext context) {
-        final TextEditingController passController = new TextEditingController();
-        final TextEditingController usernameController = new TextEditingController();
+
+
+
 
         void loginPressed () {
             print(validUsernames);
@@ -79,12 +92,22 @@ class LoginPageState extends State<LoginPage> {
 
                                 children: <Widget>[
                                     new Container(
-                                        child: new Image.asset("assets/logoDetech.png", alignment: FractionalOffset.center,),
+                                        child: new Image.asset("assets/logoDetech.png", alignment: FractionalOffset.center, scale: _imageScale,),
                                         padding: new EdgeInsets.only(top: 50.0, bottom: 50.0),
                                     ),
 
-                                    new TextField(decoration: new InputDecoration(labelText: "Username"), controller: usernameController, keyboardType: TextInputType.emailAddress,),
-                                    new TextField(decoration: new InputDecoration(labelText: "Password"), controller: passController, obscureText: true,),
+                                    new TextField(
+                                        decoration: new InputDecoration(labelText: "Username"),
+                                        controller: usernameController,
+                                        keyboardType: TextInputType.emailAddress,
+                                        autofocus: true,
+                                        onChanged: userEnteringData,
+                                    ),
+                                    new TextField(
+                                        decoration: new InputDecoration(labelText: "Password"),
+                                        controller: passController,
+                                        obscureText: true,
+                                    ),
                                     new Container(
                                         child: new RaisedButton(
                                             child: new Text("LOGIN", style: new TextStyle(color: Colors.white),),
@@ -98,7 +121,9 @@ class LoginPageState extends State<LoginPage> {
                             ),
                         ),
                     )
-            ],)
+            ],
+            controller: scrollController,
+            )
         );
 
     }

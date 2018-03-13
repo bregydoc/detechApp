@@ -1,5 +1,5 @@
 
-<img src="./logo.png" alt="Detech logo" style="width: 200px; display: block; margin: 0 auto;" />
+<img src="./logo.png" alt="Detech logo" width="200" style="display: block; margin: 0 auto;" />
 
 
 # Detech App
@@ -23,23 +23,23 @@ We are using Firebase as our backend, from which we retrieve data of patients, d
 
 - **All patient list** ([dashboard.dart](./lib/dashboard.dart))
   The list of all registered patients.  
-  <img src="./all_patients_screenshot.png" alt="All patients screen" style="width: 250px;" />
+  <img src="./all_patients_screenshot.png" alt="All patients screen" width="250" />
   
 - **Single patient info** ([patientInfo.dart](./lib/patientInfo.dart))
   The detailed view of a single patient personal information.  
-  <img src="./information_tab_screenshot.png" alt="Single patient info screen" style="width: 250px;" />
+  <img src="./information_tab_screenshot.png" alt="Single patient info screen" width="250" />
   
 - **Single patient clinic history** ([patientCH.dart](./lib/patientCH.dart))
   The view of a single patient clinic history.  
-  <img src="./clinic_history_tab_screenshot.png" alt="Single patient clinic history screen" style="width: 250px;" />
+  <img src="./clinic_history_tab_screenshot.png" alt="Single patient clinic history screen" width="250" />
   
 - **Single patient clinic history detail** ([HistoryShow.dart](./lib/HistoryShow.dart))
   The detailed view of one clinic history of a single patient.  
-  <img src="./clinic_history_detail_screenshot.png" alt="Single patient clinic history screen" style="width: 250px;" />
+  <img src="./clinic_history_detail_screenshot.png" alt="Single patient clinic history screen" width="250" />
   
 - **Single patient thermal history** ([patientThermal.dart](./lib/patientThermal.dart))
   The detailed view of a single patient thermal history. The pictures taken by the gun-device are shown here in real time.  
-  <img src="./thermal_history_tab_screenshot.png" alt="Single patient thermal history screen" style="width: 250px;" />
+  <img src="./thermal_history_tab_screenshot.png" alt="Single patient thermal history screen" width="250" />
   
 
 ## Dependencies

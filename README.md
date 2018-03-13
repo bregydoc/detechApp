@@ -19,7 +19,7 @@ We are using Firebase as our backend, from which we retrieve data of patients, d
 
 - **Login** ([main.dart](./lib/main.dart)) 
   You must provide a valid doctor username to enter the system. Password is not validated yet. All credentials are stored in Firebase.   
-<img src="./login_screenshot.png" alt="Login screen" width="300" />
+	<img src="./login_screenshot.png" alt="Login screen" width="300" />
 
 - **All patient list** ([dashboard.dart](./lib/dashboard.dart))
   The list of all registered patients.  

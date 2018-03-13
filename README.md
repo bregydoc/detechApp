@@ -1,6 +1,6 @@
-
+<div align="center">
 <img src="./logo.png" alt="Detech logo" width="230" style="display: block; margin: 0 auto;" />
-
+</div>
 
 # Detech App
 

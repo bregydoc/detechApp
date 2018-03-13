@@ -1,5 +1,5 @@
 
-<img src="./logo.png" alt="Detech logo" width="200" style="display: block; margin: 0 auto;" />
+<img src="./logo.png" alt="Detech logo" width="230" style="display: block; margin: 0 auto;" />
 
 
 # Detech App
@@ -19,27 +19,27 @@ We are using Firebase as our backend, from which we retrieve data of patients, d
 
 - **Login** ([main.dart](./lib/main.dart)) 
   You must provide a valid doctor username to enter the system. Password is not validated yet. All credentials are stored in Firebase.   
-<img src="./login_screenshot.png" alt="Login screen" style="width: 250px;" />
+<img src="./login_screenshot.png" alt="Login screen" width="300" />
 
 - **All patient list** ([dashboard.dart](./lib/dashboard.dart))
   The list of all registered patients.  
-  <img src="./all_patients_screenshot.png" alt="All patients screen" width="250" />
+  <img src="./all_patients_screenshot.png" alt="All patients screen" width="300" />
   
 - **Single patient info** ([patientInfo.dart](./lib/patientInfo.dart))
   The detailed view of a single patient personal information.  
-  <img src="./information_tab_screenshot.png" alt="Single patient info screen" width="250" />
+  <img src="./information_tab_screenshot.png" alt="Single patient info screen" width="300" />
   
 - **Single patient clinic history** ([patientCH.dart](./lib/patientCH.dart))
   The view of a single patient clinic history.  
-  <img src="./clinic_history_tab_screenshot.png" alt="Single patient clinic history screen" width="250" />
+  <img src="./clinic_history_tab_screenshot.png" alt="Single patient clinic history screen" width="300" />
   
 - **Single patient clinic history detail** ([HistoryShow.dart](./lib/HistoryShow.dart))
   The detailed view of one clinic history of a single patient.  
-  <img src="./clinic_history_detail_screenshot.png" alt="Single patient clinic history screen" width="250" />
+  <img src="./clinic_history_detail_screenshot.png" alt="Single patient clinic history screen" width="300" />
   
 - **Single patient thermal history** ([patientThermal.dart](./lib/patientThermal.dart))
   The detailed view of a single patient thermal history. The pictures taken by the gun-device are shown here in real time.  
-  <img src="./thermal_history_tab_screenshot.png" alt="Single patient thermal history screen" width="250" />
+  <img src="./thermal_history_tab_screenshot.png" alt="Single patient thermal history screen" width="300" />
   
 
 ## Dependencies
